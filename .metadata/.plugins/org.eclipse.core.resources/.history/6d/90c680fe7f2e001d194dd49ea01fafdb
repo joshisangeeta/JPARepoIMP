@@ -1,0 +1,62 @@
+package com.sj.model.bi;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+@Entity
+public class Emp {
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private   int employeeId;
+	private   String name;
+	private   double salary;
+	@OneToOne(mappedBy="emp")
+	private Department department;
+	
+	
+	public Emp() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Emp(int employeeId, String name, double salary, Department department) {
+		super();
+		this.employeeId = employeeId;
+		this.name = name;
+		this.salary = salary;
+		this.department = department;
+	}
+
+	public int getEmployeeId() {
+		return employeeId;
+	}
+	public void setEmployeeId(int employeeId) {
+		this.employeeId = employeeId;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public double getSalary() {
+		return salary;
+	}
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+	public Department getDepartment() {
+		return department;
+	}
+	public void setDepartment(Department department) {
+		this.department = department;
+	}
+	@Override
+	public String toString() {
+		return "Emp [employeeId=" + employeeId + ", name=" + name + ", salary=" + salary + ", department=" + department
+				+ "]";
+	}
+
+}

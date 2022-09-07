@@ -1,0 +1,20 @@
+package com.sj.test;
+
+import javax.persistence.Persistence;
+
+public class TestStudentCRUD {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	
+	       Persistence.createEntityManagerFactory("");
+	
+	
+	
+	
+	
+	
+	}
+
+}

@@ -1,0 +1,8 @@
+package com.sj.model.bi;
+
+public class Department {
+	
+	private int dept_id;
+	private String dept_name;
+
+}

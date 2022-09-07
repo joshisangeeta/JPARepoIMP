@@ -1,0 +1,16 @@
+package com.sj.model;
+
+public class Employee {
+	
+	   int employeeId;
+	   String name;
+	   double salary;
+	   Address address;
+	   
+	
+	
+	
+	
+	
+
+}

@@ -1,0 +1,15 @@
+package com.sj.model.bi;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+public class Emp {
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private   int employeeId;
+	private   String name;
+	private   double salary;
+	private Department department;
+
+}
