@@ -9,8 +9,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="OneToOneDemo"/>
-			<item value="JPAHibernateDemo1"/>
+			<item value="ManyToOneBi"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
